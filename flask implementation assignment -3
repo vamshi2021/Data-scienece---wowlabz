@@ -1,0 +1,88 @@
+Flask Redirect and Errors:- 
+
+* Flask class provides the redirect() function which redirects the user to some specified URL with the specified status code.
+* An HTTP status code is a response from the server to the request of the browser. 
+* When we visit a website, a request is sent to the server, and the server then responds to the browser's request with a three-digit code: the HTTP status code. This status code also represents the error.
+
+The syntax to use the redirect() function is given below.
+
+>>>Flask.redirect(<location>,<status-code>, <response> )  
+It accepts the following parameters.
+
+
+SN	 Parameter	          Description
+
+1	   location	            It is the URL where the response will be redirected.
+2	   status code          It is the status code that is sent to the browser's header along with the response from the server.
+3	   response             It is the instance of the response that is used in the project for future requirements.
+
+
+The abort() function:-
+
+The abort() function is used to handle the cases where the errors are involved in the requests from the client side, such as bad requests, unauthorized access and many more. However, the error code is to be mentioned due to which the error occurred.
+
+The syntax to use the abort() function is given below.
+
+ >>> Flask.abort(code)  
+
+We can mention the following error codes depending upon the specified errors.
+
+400: for bad requests
+401: for unauthorized access
+403: for forbidden
+404: for not found
+406: for not acceptable
+415: for unsupported media types
+429: for too many requests
+
+
+Flask Flashing:-
+* Flask provides the flash() method, in the same way, the client-side scripting language like JavaScript uses the alerts or the python GUI framework Tkinter uses the dialogue box or the message box.
+* The flash() method is used to generate informative messages in the flask. 
+* It creates a message in one view and renders it to a template view function called next.
+* In other words, the flash() method of the flask module passes the message to the next request which is an HTML template. The syntax to use the flash() method is given below.
+
+      >>> flash(message, category)   
+
+It accepts the following parameters.
+
+message:     it is the message to be flashed to the user.
+Category:    It is an optional parameter. Which may represent any error, information, or warning.
+--->The messages are generated in the flask script using the flash() method of flask module. 
+---> These messages need to be extracted in the template from the session. For this purpose, the method get_flashed_messages() is called in the HTML template.
+
+The syntax to use this method is given below.
+
+>>> get_flashed_messages(with_categories, category_filter)  
+
+It accepts the following parameters.
+
+with_categories: This parameter is optional and used if the messages have the category.
+category_filter: This parameter is also optional. It is useful to display only the specified messages.
+
+Flask-Mail Extension :-
+
+A web application must be capable of sending emails to users. 
+The flask-mail extension provides the simple interface for the developer and the email server to send the email through the web application.
+For this purpose, we must install the flask-mail extension using the pip installer.
+
+There are several classes which are important to send emails using the python flask web application.
+
+1. Message class
+2. mail class
+
+
+Flask SQLite:- 
+
+Flask can make use of the SQLite3 module of the python to create the database web applications. 
+Through this we can create a CRUD (create - read - update - delete) application.
+
+CRUD Application in flask :-
+
+Here, we will manage the employee information in the SQLite database using a flask script to which the admin can interact. 
+For this purpose, database employee,db contains the related tables whereas the table Employees contains information about the employees.
+
+
+
+
+
