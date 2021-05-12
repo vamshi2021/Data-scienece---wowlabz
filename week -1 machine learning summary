@@ -1,0 +1,75 @@
+
+sumamry of machine learning 
+
+* Machine Learning is a field of study that gives computers the ability to learn without being programmed.
+* Machine Learning is making the computer learn from studying data and statistics.
+* Machine Learning is a program that analyses data and learns to predict the outcome.
+
+* Python-based: Python is one of the most commonly used languages to build machine learning systems. 
+
+
+Key Machine Learning terminologies are:
+
+Labels
+Features
+Models
+Training
+Inference
+Functions
+Relationships
+
+Machine learning systems uses Relationships between Inputs to produce Predictions.
+
+In algebra, a relationship is often written as y = ax + b:
+
+y is the label we want to predict
+a is the slope of the line
+x are the input values
+b is the intercept
+
+With ML, a relationship is written as y = b + wx:
+
+y is the label we want to predict
+w is the weight (the slope)
+x are the features (input values)
+b is the intercept
+
+SUPERVISED MACHINE LEARNING
+
+* Supervised machine learning is used to predict defined relationships like "What is spam in an e-mail".
+* It is about training algorithms to make predictions, like predicting what kind of video you like, based on the videos you have played.
+* Supervised learning is one of the major categories of machine learning algorithms. 
+* In this form of learning, the data contains labeled examples of the concept you want the algorithm to learn. 
+* For example, if you want an algorithm to predict fraud, you’ll supply it with examples that denote fraud and examples that are non-fraud.
+* The algorithm learns to distinguish the two categories. This kind of distinction between categories is called ‘classification’. 
+* Another kind of supervised learning is ‘regression’, where an algorithm learns to predict values on a continuous scale, 
+* For example, given data for past sales, can we predict future values of sales of a product
+
+           1. LINEAR PREDICTIONS
+           
+           Linear methods are the simplest, yet often the fastest and most effective set of algorithms. 
+           They assume that the data can be represented by a (multidimensional) line.
+           In the case of regression, the line represents the structure of the data. 
+           In the case of classification, the line represents the boundary between the different classes. 
+           
+           
+           2. NON-LINEAR PREDICTIONS
+           
+           While linear methods work well enough a lot of the time, real-world problems are sometimes much more complex. 
+           
+           
+ UNSUPERVISED MACHINE LEARNING
+ 
+ * unsupervised learning does not need labeled data. 
+ * The idea behind unsupervised learning is to discover structure in a new data set from scratch. 
+ * This can be extremely useful, e.g. finding segments of customers for a consumer product.
+ 
+         1. CLUSTERING
+         Clustering is the most common use case for unsupervised learning. 
+         The problem of clustering is to find groups within a data set that have some commonalities. 
+         Clustering can be used for a variety of applications, from customer segmentation to basic recommendation systems.
+
+Thats it these are the machine learning learnings i learnt from the first unit
+
+
+                                                     ***THE END***
