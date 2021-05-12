@@ -83,11 +83,40 @@ Python provides the following set of operators
 Functions ----> Python functions are defined using the def keyword
 Classes   ----> The syntax for defining classes in Python is straightforward
 
+Python is an ocean of libraries that serve various purposes
+Top 10 Python Libraries are:
+Pandas
+Numpy
+SciPy
+TensorFlow
+Scikit-Learn
+Keras
+PyTorch
+LightGBM
+Eli5
+Theano
+
+-------------------------------------------------------------------------------------------
 Numpy
 
 
 Numpy is the core library for scientific computing in Python. 
 It provides a high-performance multidimensional array object, and tools for working with these arrays. 
+Numpy is considered as one of the most popular machine learning library in Python.
+TensorFlow and other libraries uses Numpy internally for performing multiple operations on Tensors. 
+Array interface is the best and the most important feature of Numpy.
+
+Features Of Numpy :- 
+
+Interactive: Numpy is very interactive and easy to use.
+Mathematics: Makes complex mathematical implementations very simple.
+Intuitive: Makes coding real easy and grasping the concepts is easy.
+Lot of Interaction: Widely used, hence a lot of open source contribution.
+
+Uses of Numpy?
+This interface can be utilized for expressing images, sound waves, and other binary raw streams as an array of real numbers in N-dimensional.
+For implementing this library for machine learning having knowledge of Numpy is important for full stack developers.
+
 
 Arrays
 
@@ -103,28 +132,59 @@ Numpy offers several ways to index into arrays.
 
 Datatypes
 
-Every numpy array is a grid of elements of the same type. Numpy provides a large set of numeric datatypes that you can use to construct arrays. 
+--> Every numpy array is a grid of elements of the same type. Numpy provides a large set of numeric datatypes that you can use to construct arrays. 
 Numpy tries to guess a datatype when we create an array, but functions that construct arrays usually also include an optional argument to explicitly specify the datatype.
 
 Array math
 
-Basic mathematical functions operate elementwise on arrays, and are available both as operator overloads and as functions in the numpy module
+--> Basic mathematical functions operate elementwise on arrays, and are available both as operator overloads and as functions in the numpy module
 
 Broadcasting
 
-Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arithmetic operations. 
+--> Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arithmetic operations. 
 Frequently we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SciPy
 
-Numpy provides a high-performance multidimensional array and basic tools to compute with and manipulate these arrays. 
-SciPy builds on this, and provides a large number of functions that operate on numpy arrays and are useful for different types of scientific and engineering applications.
+--> SciPy is a machine learning library for application developers and engineers.
+--> SciPy library contains modules for optimization, linear algebra, integration, and statistics.
 
+
+Features Of SciPy :-
+
+The main feature of SciPy library is that it is developed using NumPy, and its array makes the most use of NumPy.
+In addition, SciPy provides all the efficient numerical routines like optimization, numerical integration, and many others using its specific submodules.
+
+
+Applications of SciPy :-
+
+SciPy is a library that uses NumPy for the purpose of solving mathematical functions. 
+SciPy uses NumPy arrays as the basic data structure, and comes with modules for various commonly used tasks in scientific programming.
+Tasks including linear algebra, integration (calculus), ordinary differential equation solving and signal processing execute easily by SciPy.
 
 Image operations:- 
 SciPy provides some basic functions to work with images. 
 For example, it has functions to read images from disk into numpy arrays, to write numpy arrays to disk as images, and to resize images.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What Is Pandas
+Pandas is a machine learning library in Python that provides data structures of high-level and a wide variety of tools for analysis. 
+One of the great feature of this library is the ability to translate complex operations with data using one or two commands. 
+Pandas have so many inbuilt methods for grouping, combining data, and filtering, as well as time-series functionality.
+
+Features Of Pandas:- 
+Pandas make sure that the entire process of manipulating data will be easier.
+Support for operations such as Re-indexing, Iteration, Sorting, Aggregations, Concatenations and Visualizations are among the feature highlights of Pandas.
+
+Applications of Pandas:- 
+Currently, there are fewer releases of pandas library which includes hundred of new features, bug fixes, enhancements, and changes in API. 
+The improvements in pandas regards its ability to group and sort data, select best suited output for the apply method, and provides support for performing custom types operations.
+
+Data Analysis among everything else takes the highlight when it comes to usage of Pandas. 
+But, Pandas when used with other libraries and tools ensure high functionality and good amount of flexibility.
+
+
 
 
 These are the basics i had learneed and summarised and finnaly i also concluding the python libraries for good understanding
