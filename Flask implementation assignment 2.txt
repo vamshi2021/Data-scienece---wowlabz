@@ -1,0 +1,146 @@
+In this file im going to summarize my second assignment as a part of flask implementation
+
+Flask HTTP methods:- 
+
+* HTTP is the hypertext transfer protocol which is considered as the foundation of the data transfer in the world wide web. 
+* All web frameworks including flask need to provide several HTTP methods for data communication.
+
+The methods are
+GET	:- It is the most common method which can be used to send data in the unencrypted form to the server.
+HEAD :- It is similar to the GET but used without the response body.
+POST:-	It is used to send the form data to the server. The server does not cache the data transmitted using the post method.
+PUT :- 	It is used to replace all the current representation of the target resource with the uploaded content.
+DELETE :-	It is used to delete all the current representation of the target resource specified in the URL
+
+
+---> We can specify which HTTP method to be used to handle the requests in the route() function of the Flask class.
+---> By default, the requests are handled by the GET() method.
+
+
+
+Flask Templates :-
+
+* Templates help you reuse visuals. In all web apps, the visuals are reused. This helps to divide the business and presentation logic. 
+
+Rendering external HTML files:-
+
+* Flask facilitates us to render the external HTML file instead of hardcoding the HTML in the view function. 
+* Here, we can take advantage of the jinja2 template engine on which the flask is based.
+* Flask provides us the render_template() function which can be used to render the external HTML file to be returned as the response from the view function.
+
+Delimiters:-
+
+* Jinga 2 template engine provides some delimiters which can be used in the HTML to make it capable of dynamic data representation. 
+* The template system provides some HTML syntax which are placeholders for variables and expressions that are replaced by their actual values when the template is rendered.
+* The jinga2 template engine provides the following delimiters to escape from the HTML.
+
+              {% ... %} for statements
+              {{ ... }} for expressions to print to the template output
+              {# ... #} for the comments that are not included in the template output
+              # ... ## for line statements
+              
+Embedding Python statements in HTML :-
+
+Due to the fact that HTML is a mark-up language and purely used for the designing purpose, 
+sometimes, in the web applications, we may need to execute the statements for the general-purpose computations.
+For this purpose, Flask facilitates us the delimiter {%...%} which can be used to embed the simple python statements into the HTML.
+
+
+Referring Static files in HTML:- 
+
+The static files such as CSS or JavaScript file enhance the display of an HTML web page. 
+A web server is configured to serve such files from the static folder in the package or the next to the module. 
+The static files are available at the path /static of the application.
+
+
+Flask Request Object :- 
+
+In the client-server architecture, the request object contains all the data that is sent from the client to the server.
+we can retrieve the data at the server side using the HTTP methods.
+
+Attribute	Description :- 
+
+1	Form -	It is the dictionary object which contains the key-value pair of form parameters and their values.
+2	args -	It is parsed from the URL. It is the part of the URL which is specified in the URL after question mark (?).
+3	Cookies -	It is the dictionary object containing cookie names and the values. It is saved at the client-side to track the user session.
+4	files - 	It contains the data related to the uploaded file.
+5	method	It is the current request method (get or post).
+
+Form data retrieval on the template :-
+
+The data filled in this form is posted to the /success URL which triggers the print_data() function. 
+The print_data() function collects all the data from the request object and renders the result_data.html file which shows all the data on the web page.
+The application contains three files, i.e., script.py, customer.html, and result_data.html.
+
+
+Flask Cookies:- 
+
+* The cookies are stored in the form of text files on the client's machine. 
+* Cookies are used to track the user's activities on the web and reflect some suggestions according to the user's choices to enhance the user's experience.
+* Cookies are set by the server on the client's machine which will be associated with the client's request to that particular server in all future transactions until the lifetime of the cookie expires or it is deleted by the specific web page on the server.
+* In flask, the cookies are associated with the Request object as the dictionary object of all the cookie variables and their values transmitted by the client. 
+* Flask facilitates us to specify the expiry time, path, and the domain name of the website.
+
+     >>> response.setCookie(<title>, <content>, <expiry time>)  
+* In Flask, the cookies are set on the response object by using the set_cookie() method on the response object. The response object can be formed by using the make_response() method in the view function.
+* In addition, we can read the cookies stored on the client's machine using the get() method of the cookies attribute associated with the Request object.
+     >>> request.cookies.get(<title>)  
+
+
+Login application in Flask :-
+
+Here, we will create a login application in the flask where a login page (login.html) is shown to the user which prompts to enter the email and password. 
+If the password is "jtp", then the application will redirect the user to the success page (success.html),
+where the message and a link to the profile (profile.html) is given otherwise it will redirect the user to the error page.
+
+
+Flask Session:-
+
+* The concept of a session is very much similar to that of a cookie. However, the session data is stored on the server.
+
+* The session can be defined as the duration for which a user logs into the server and logs out. The data which is used to track this session is stored into the temporary directory on the server.
+
+* The session data is stored on the top of cookies and signed by the server cryptographically.
+
+* In the flask, a session object is used to track the session data which is a dictionary object that contains a key-value pair of the session variables and their associated values.
+
+The following syntax is used to set the session variable to a specific value on the server.
+
+         >>> Session[<variable-name>] = <value>  
+         
+* To remove a session variable, use the pop() method on the session object and mention the variable to be removed.
+
+         >>> session.pop(<variable-name>, none) 
+         
+         
+ Flask File Uploading:- 
+ 
+* File uploading is the process of transmitting the binary or normal files to the server. 
+* Flask facilitates us to upload the files easily. All we need to have an HTML form with the encryption set to multipart/form-data.
+* The server-side flask script fetches the file from the request object using request.files[] Object.
+* On successfully uploading the file, it is saved to the desired location on the server.
+* The uploaded file is saved to the temporary directory of the server for a while before it is saved to some desired location. 
+* The name of the destination file can be obtained using the following syntax.
+
+          >>>name = request.files['file'].filename  
+          
+          
+   app.config['UPLOAD_FOLDER']	    =  It is used to mention the upload folder.
+   
+   app.config['MAX_CONTENT-PATH']	  =  It is used to mention the maximum size of the file to be uploaded.
+
+
+
+
+
+
+These are the learnings that i learnt and summarised as a part of 2nd assignment of flask implementation.
+
+
+
+
+                           *** THE END ***
+
+
+
+
