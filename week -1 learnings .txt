@@ -1,0 +1,144 @@
+
+Basics of python summary :-
+
+Python is a great general-purpose programming language on its own, but with the help of a few popular libraries (numpy, scipy, matplotlib) 
+it becomes a powerful environment for scientific computing.
+
+ Insatllation of Jupyter and colab Notebooks
+
+ ---> A Jupyter notebook lets you write and execute Python code locally in your web browser. 
+ ---> Jupyter notebooks make it very easy to tinker with code and execute it in bits and pieces; for this reason they are widely used in scientific computing. 
+ ---> Colab on the other hand is Google’s flavor of Jupyter notebooks that is particularly suited for machine learning and data analysis and that runs entirely in the cloud. 
+ 
+ Data types present in python :-
+ 
+ Python contains the following inbuilt data types
+1. int
+2. float
+3.complex
+4.bool
+5.str
+6.bytes
+7.bytearray
+8.range
+9.list
+10.tuple
+11.set
+12.frozenset
+13.dict
+14.None
+
+-----------------------------------------------------------------------------------------------
+Containers :- 
+
+Python includes several built-in container types: lists, dictionaries, sets, and tuples.
+
+
+       1  Lists
+          * list To represent an ordered collection of objects
+          * Mutable 
+          >>> l=[10,11,12,13,14,15]
+          >>> type(l)
+          <class 'list'>
+
+          -> Slicing: In addition to accessing list elements one at a time, Python provides concise syntax to access sublists; this is known as slicing
+
+       2  Tuple
+          * Tuple To represent an ordered collections of objects
+          * Immutable 
+
+          >>> t=(1,2,3,4,5)
+          >>> type(t)
+          <class 'tuple'>
+
+       3  Set
+
+          * set To represent an unordered collection of unique objects
+          * Mutable 
+          >>> s={1,2,3,4,5,6}
+          >>> type(s)
+         <class 'set'>
+
+       4  Dictionaries
+
+          * A dictionary stores (key, value) pairs, similar to a Map in Java or an object in Javascript
+          * Mutable >>>
+          d={101:'durga',102:'ramu',103:'hari'}
+          >>> type(d)
+          <class 'dict'>
+
+-------------------------------------------------------------------------------------------------------------
+
+operators present in python :-
+Operator is a symbol that performs certain operations.
+Python provides the following set of operators
+1. Arithmetic Operators
+2. Relational Operators or Comparison Operators
+3. Logical operators
+4. Bitwise oeprators
+5. Assignment operators
+6. Special operators
+-----------------------------------------------------------------------------------------------------------
+
+Functions ----> Python functions are defined using the def keyword
+Classes   ----> The syntax for defining classes in Python is straightforward
+
+Numpy
+
+
+Numpy is the core library for scientific computing in Python. 
+It provides a high-performance multidimensional array object, and tools for working with these arrays. 
+
+Arrays
+
+A numpy array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. 
+The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
+We can initialize numpy arrays from nested Python lists, and access elements using square brackets:
+Numpy also provides many functions to create arrays
+
+Array indexing:-
+Numpy offers several ways to index into arrays.
+
+--->Slicing: Similar to Python lists, numpy arrays can be sliced. Since arrays may be multidimensional, we must specify a slice for each dimension of the array
+
+Datatypes
+
+Every numpy array is a grid of elements of the same type. Numpy provides a large set of numeric datatypes that you can use to construct arrays. 
+Numpy tries to guess a datatype when we create an array, but functions that construct arrays usually also include an optional argument to explicitly specify the datatype.
+
+Array math
+
+Basic mathematical functions operate elementwise on arrays, and are available both as operator overloads and as functions in the numpy module
+
+Broadcasting
+
+Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arithmetic operations. 
+Frequently we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
+
+
+SciPy
+
+Numpy provides a high-performance multidimensional array and basic tools to compute with and manipulate these arrays. 
+SciPy builds on this, and provides a large number of functions that operate on numpy arrays and are useful for different types of scientific and engineering applications.
+
+
+Image operations:- 
+SciPy provides some basic functions to work with images. 
+For example, it has functions to read images from disk into numpy arrays, to write numpy arrays to disk as images, and to resize images.
+
+
+These are the basics i had learneed and summarised and finnaly i also concluding the python libraries for good understanding
+
+Python Libraries :-
+
+Python has libraries with large collections of mathematical functions and analytical tools
+* Pandas - This library is used for structured data operations, like import CSV files, create dataframes, and data preparation
+* Numpy - This is a mathematical library. Has a powerful N-dimensional array object, linear algebra, Fourier transform, etc.
+* Matplotlib - This library is used for visualization of data.
+* SciPy - This library has linear algebra modules
+
+
+
+                                                                       ###THE END ###
+
+
