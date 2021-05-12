@@ -168,7 +168,9 @@ SciPy provides some basic functions to work with images.
 For example, it has functions to read images from disk into numpy arrays, to write numpy arrays to disk as images, and to resize images.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-What Is Pandas
+Pandas
+
+
 Pandas is a machine learning library in Python that provides data structures of high-level and a wide variety of tools for analysis. 
 One of the great feature of this library is the ability to translate complex operations with data using one or two commands. 
 Pandas have so many inbuilt methods for grouping, combining data, and filtering, as well as time-series functionality.
